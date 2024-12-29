@@ -36,7 +36,7 @@ $capstone_example_ideas = [
     <title>Quick Start</title>
   </head>
   <body>
-    <a href="../">Back</a>
+    <a href="./index.php">Back</a>
     <h1>Capstone</h1>
     <div id="capstone-details">
       <div>
