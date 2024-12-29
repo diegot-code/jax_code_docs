@@ -1,0 +1,110 @@
+:root {
+  --primary: #08255c;
+  --secondary: #40babd;
+  --light-blue: #58bbee;
+  --light: #fff;
+  --dark: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* Ensures links inherit text color unless explicitly styled */
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 60rem;
+  width: calc(100% - 4rem);
+  margin-inline: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+header {
+  background-color: var(--primary);
+  color: var(--light-blue);
+  border-top: 5px solid var(--light-blue);
+  padding: 1.5rem 0;
+}
+
+header span {
+  color: var(--light);
+  font-weight: bold;
+}
+
+header h1,
+header a {
+  color: var(--light);
+}
+
+main {
+  margin-top: 3rem;
+}
+
+main a {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.unit {
+  padding: 2rem;
+  border: 1px solid var(--dark);
+  border-radius: 8px;
+  margin-block: 1rem;
+}
+
+.lesson {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 1rem; /* Consistent spacing */
+  border: 1px solid var(--dark);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.lesson > * {
+  display: flex;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+.lesson > :nth-child(1),
+.lesson > :nth-child(3) {
+  flex: 1; /* Use flex for consistent responsiveness */
+}
+
+.lesson > :nth-child(2) {
+  flex: 0.5;
+}
+
+.lesson ul {
+  display: flex; /* Ensures ul children align properly */
+  flex-direction: column;
+  justify-content: center;
+}
+
+#lessons {
+  margin-inline: 1rem;
+}
+
+.lv-cont {
+  width: 25%;
+}

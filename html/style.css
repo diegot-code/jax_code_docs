@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 20px;
+  color: #212529;
+}
+
+.code-section h1 {
+  font-size: 2rem;
+  color: #212529;
+}
+
+.code-section h2 {
+  font-size: 1.5rem;
+  color: #495057;
+  margin-bottom: 10px;
+}
+
+.code-block {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.code-block code {
+  display: block;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
