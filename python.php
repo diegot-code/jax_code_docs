@@ -47,7 +47,7 @@ $lessons = [
         <div>
           JAX<span>CODE</span> DOCS <br />
           Home / Syllabus MyDocs <br />
-          <a href="../">Back</a>
+          <a href="./index.php">Back</a>
         </div>
         <h1 class="">Python</h1>
       </div>
