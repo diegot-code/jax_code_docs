@@ -1,24 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<?php
+$pageName = "LAMP Stack";
 
-    <link rel="stylesheet" href="styles.css" />
+include_once "temp_header.php";
 
-    <title>Quick Start</title>
-  </head>
-  <body>
-    <header>
-      <div class="container flex space-between">
-        <div>
-          JAX<span>CODE</span> DOCS <br />
-          Home / Syllabus MyDocs <br />
-          <a href="./index.php">Back</a>
-        </div>
-        <h1 class="">LAMP Stack</h1>
-      </div>
-    </header>
+?>
     <main class="container">
       <ol class="container">
         <a href="#"><li>MySQL database and SQL</li></a>

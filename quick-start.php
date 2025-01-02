@@ -1,24 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<?php
+$pageName = "Quick Start Guide";
 
-    <link rel="stylesheet" href="styles.css" />
-
-    <title>Quick Start</title>
-  </head>
-  <body>
-    <header>
-      <div class="container flex space-between">
-        <div>
-          JAX<span>CODE</span> DOCS <br />
-          Home / Syllabus MyDocs <br />
-          <a href="./index.php">Back</a>
-        </div>
-        <h1 class="">Quick Start Guide</h1>
-      </div>
-    </header>
+include_once "temp_header.php";
+?>
     <main class="container">
       <div class="unit">
         <h2>Basic Environment Set-up</h2>

@@ -1,24 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<?php
+$pageName = "Basic Web Development";
 
-    <link rel="stylesheet" href="styles.css" />
-
-    <title>Basic Web Development</title>
-  </head>
-  <body>
-    <header>
-      <div class="container flex space-between">
-        <div>
-          JAX<span>CODE</span> DOCS <br />
-          Home / Syllabus MyDocs <br />
-          <a href="./index.php">Back</a>
-        </div>
-        <h1 class="">Basic Web Dev</h1>
-      </div>
-    </header>
+include_once "temp_header.php";
+?>
     <main class="container">
       <ol>
         <li>
