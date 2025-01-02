@@ -1,11 +1,11 @@
 <?php
 
 $sections = [
-  "Quick Start" => "quick-start.html",
-  "Web Development Foundations" => "foundations.html",
-  "Related Topics" => "related-topics.html",
-  "MERN Syllabus" => "mern.html",
-  "LAMP Syllabus" => "lamp.html",
+  "Quick Start" => "quick-start.php",
+  "Web Development Foundations" => "foundations.php",
+  "Related Topics" => "related-topics.php",
+  "MERN Syllabus" => "mern.php",
+  "LAMP Syllabus" => "lamp.php",
   "Python Syllabus" => "python.php"
 ];
 
