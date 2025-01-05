@@ -2,28 +2,48 @@
 
 $lessons = [
   "lesson1" => [
-    "title" => "Module 1",
-    "content" => ["Print", "Data Types", "Operators", "Conditionals/Control Flow", "Functions"],
+    "title" => "Python Basics",
+    "content" => ["Intro to Python", "Syntax and Basics", "Variables and Data Types", "Operators"],
     "path" => "./python/module_1.php"
   ],
   "lesson2" => [
-    "title" => "Module 2",
-    "content" => ["User Interaction/Inputs", "Operators", "Conditionals/Control Flow", "Functions"],
+    "title" => "Control Flow",
+    "content" => ["Conditional Statements", "Loops"],
     "path" => "./python/module_2.php"
   ],
   "lesson3" => [
-    "title" => "Module 3",
-    "content" => ["Data Types", "Operators", "Conditionals/Control Flow", "Functions"],
+    "title" => "Functions and Modules",
+    "content" => ["Functions", "Modules and Libraries"],
     "path" => "./python/module_3.php"
   ],
   "lesson4" => [
-    "title" => "Module 4",
-    "content" => ["Data Types", "Operators", "Conditionals/Control Flow", "Functions"],
+    "title" => "Data Structures",
+    "content" => ["Strings", "Lists", "Dictionaries", "Tuples and Sets"],
     "path" => "./python/module_4.php"
   ],
   "lesson5" => [
-    "title" => "Module 5",
-    "content" => ["Data Types", "Operators", "Conditionals/Control Flow", "Functions"],
+    "title" => "OOP Basics",
+    "content" => ["Classes and Objects", "Encapsulation Basics"],
+    "path" => "./python/module_5.php"
+  ],
+  "lesson6" => [
+    "title" => "Modifying Files",
+    "content" => ["File Handling"],
+    "path" => "./python/module_5.php"
+  ],
+  "lesson7" => [
+    "title" => "Error Handling",
+    "content" => ["Exceptions"],
+    "path" => "./python/module_5.php"
+  ],
+  "lesson8" => [
+    "title" => "Advanced Foundation",
+    "content" => ["List Comprehensions", "Intro to Libraries", "Intro to Automation"],
+    "path" => "./python/module_5.php"
+  ],
+  "lesson9" => [
+    "title" => "Python for Web Developers",
+    "content" => ["Flask and Django overview"],
     "path" => "./python/module_5.php"
   ]
 ];
@@ -33,30 +53,55 @@ $pageName = "Python";
 include_once "temp_header.php";
 
 ?>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Python Modules</h1>
 
-    <main id="lessons">
-    <?php foreach ($lessons as $lesson) {
+    <!-- Expandable Accordion Cards -->
+    <?php
+    foreach ($lessons as $id => $lesson) {
         ?>
-          <a href="<?= $lesson["path"] ?>" class="lesson">
-              <h3><?= $lesson["title"] ?></h3>
-              <video class="lv-cont" controls poster="" >
-                <source class="lv-vid" src="miniTerminal.mp4" type="video/mp4">
-              </video>
-              <ul class="lesson_details">
-                <?php
-                foreach ($lesson["content"] as $topic) {
-                  ?>
-                  <li><?= $topic ?></li>
-                <?php
-                }
-                  ?>
-              </ul>
-              </a>
+        <div class="accordion my-3" id="accordion-<?= $id ?>">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-<?= $id ?>">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-<?= $id ?>" aria-expanded="false" aria-controls="collapse-<?= $id ?>">
+                        <?= $lesson['title'] ?>
+                    </button>
+                </h2>
+                <div id="collapse-<?= $id ?>" class="accordion-collapse collapse" aria-labelledby="heading-<?= $id ?>" data-bs-parent="#accordion-<?= $id ?>">
+                    <div class="accordion-body">
+                        <ul>
+                            <?php foreach ($lesson['content'] as $topic) { ?>
+                                <li><?= $topic ?></li>
+                            <?php } ?>
+                        </ul>
+                        <div class="accordion mt-3" id="demoAccordion-<?= $id ?>">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="demoHeading-<?= $id ?>">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#demoCollapse-<?= $id ?>" aria-expanded="false" aria-controls="demoCollapse-<?= $id ?>">
+                                        Watch Demo
+                                    </button>
+                                </h2>
+                                <div id="demoCollapse-<?= $id ?>" class="accordion-collapse collapse" aria-labelledby="demoHeading-<?= $id ?>" data-bs-parent="#demoAccordion-<?= $id ?>">
+                                    <div class="accordion-body">
+                                        <video controls class="w-100">
+                                            <source src="<?= $lesson['path'] ?>" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <?php
-      }
-      ?>
-    </main>
+    }
+    ?>
+</div>
 
-    </div>
-  </body>
-</html>
+
+  <?php
+  include_once "temp_footer.php";
+
+  ?>
