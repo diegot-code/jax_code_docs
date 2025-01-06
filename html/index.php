@@ -1,3 +1,15 @@
+<?php
+$contents = [
+    [
+        'heading' => 'Jax Code Academy',
+        'description' => 'Jax Code Academy is the premiere coding school in Northeast Florida.',
+        'styles' => 'background-color:black;color:white;padding:20px;',
+        'code' => "<!DOCTYPE html>\n<html>\n<head>\n<title>Hello World</title>\n</head>\n<body>\nHello, World!\n</body>\n</html>"
+    ]
+];
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
