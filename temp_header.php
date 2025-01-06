@@ -1,11 +1,11 @@
 <?php
 
 $links = [
-    "boostrap" => [
+    [
         "rel" => "stylesheet",
         "url" => "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
     ],
-    "styles" => [
+    [
         "rel" => "stylesheet",
         "url" => "./styles.css"
     ]
