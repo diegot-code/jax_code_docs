@@ -4,7 +4,7 @@ $contents = [
         'heading' => 'Jax Code Academy',
         'description' => 'Jax Code Academy is the premiere coding school in Northeast Florida.',
         'styles' => 'background-color:black;color:white;padding:20px;',
-        'code' => "<!DOCTYPE html>\n<html>\n<head>\n<title>Hello World</title>\n</head>\n<body>\nHello, World!\n</body>\n</html>"
+        'code' => "<!DOCTYPE html>\n  <html>\n    <head>\n      <title>Hello World</title>\n    </head>\n   <body>\n      Hello, World!\n   </body>\n </html>"
     ]
 ];
 ?>
@@ -19,22 +19,16 @@ $contents = [
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="code-section">
-      <h1>HTML</h1>
-      <h2>HTML Format</h2>
-      <pre class="code-block">
-      <code>
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Hello World&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    Hello, World!
-  &lt;/body&gt;
-&lt;/html&gt;
-      </code>
-    </pre>
+  <main>
+    <div class="container">
+        <?php foreach ($contents as $content): ?>
+            <div style="<?= $content['styles']; ?>">
+                <h2><?= $content['heading']; ?></h2>
+                <p><?= $content['description']; ?></p>
+                <pre><code><?= htmlspecialchars($content['code']); ?></code></pre>
+            </div>
+        <?php endforeach; ?>
     </div>
+</main>
   </body>
 </html>
