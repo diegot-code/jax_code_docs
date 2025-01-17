@@ -30,7 +30,7 @@ include_once "temp_header.php";
           </li>
           <li>
             Create an account on
-            <a href="https://account.mongodb.com/account/register">MangoDB</a>
+            <a href="https://account.mongodb.com/account/register">MongoDB</a>
           </li>
         </ul>
       </div>
