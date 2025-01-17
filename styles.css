@@ -109,3 +109,20 @@ main a {
 .lv-cont {
   width: 25%;
 }
+
+.go-to-lesson {
+  display: flex;
+  justify-content: end;
+}
+
+.lesson-link {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--light-blue);
+  transition: all 1s;
+  border-radius: 10px;
+}
+
+.lesson-link:hover {
+  font-weight: bold;
+  background-color: var(--light-blue);
+}
