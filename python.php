@@ -29,22 +29,22 @@ $lessons = [
   "lesson6" => [
     "title" => "Modifying Files",
     "content" => ["File Handling"],
-    "path" => "./python/module_5.php"
+    "path" => "./python/module_6.php"
   ],
   "lesson7" => [
     "title" => "Error Handling",
     "content" => ["Exceptions"],
-    "path" => "./python/module_5.php"
+    "path" => "./python/module_7.php"
   ],
   "lesson8" => [
     "title" => "Advanced Foundation",
     "content" => ["List Comprehensions", "Intro to Libraries", "Intro to Automation"],
-    "path" => "./python/module_5.php"
+    "path" => "./python/module_8.php"
   ],
   "lesson9" => [
     "title" => "Python for Web Developers",
     "content" => ["Flask and Django overview"],
-    "path" => "./python/module_5.php"
+    "path" => "./python/module_9.php"
   ]
 ];
 
@@ -74,6 +74,11 @@ include_once "temp_header.php";
                                 <li><?= $topic ?></li>
                             <?php } ?>
                         </ul>
+
+                        <div class="go-to-lesson">
+                          <a class="lesson-link" href="<?= $lesson['path'] ?>">Go to Lesson</a>
+                        </div>
+
                         <div class="accordion mt-3" id="demoAccordion-<?= $id ?>">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="demoHeading-<?= $id ?>">
